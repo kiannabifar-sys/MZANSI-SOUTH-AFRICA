@@ -1,1 +1,453 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#071b18">
+<meta name="description" content="سفری دیجیتال به آفریقای جنوبی؛ سرزمین رنگین‌کمان، طبیعت شگفت‌انگیز، فرهنگ‌های گوناگون و تاریخ پرفرازونشیب.">
+<title>MZANSI | آفریقای جنوبی با دانش</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#071b18;--bg2:#0b2823;--panel:rgba(16,49,42,.78);--text:#f4f5eb;--muted:#b7c9be;--gold:#f7c948;--coral:#ff725e;--green:#38c98a;--line:rgba(255,255,255,.12);--shadow:0 22px 70px #0005}
+*{box-sizing:border-box;scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--text);font-family:Vazirmatn,sans-serif;line-height:1.9;overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;z-index:-1;background:radial-gradient(ellipse at 15% 10%,#174b3d 0,transparent 35%),radial-gradient(ellipse at 90% 45%,#382b16 0,transparent 28%),linear-gradient(150deg,#071b18,#091713 60%,#102b24)}
+a{color:inherit;text-decoration:none}
+button{font:inherit;cursor:pointer}
+.topline{height:5px;background:linear-gradient(90deg,#de3838 0 16%,#fff 16% 32%,#187a49 32% 48%,#f7c948 48% 64%,#397bd1 64% 80%,#111 80%)}
+header{position:sticky;top:0;z-index:20;background:#061713dc;backdrop-filter:blur(18px);border-bottom:1px solid var(--line)}
+.nav{max-width:1200px;margin:auto;padding:12px 22px;display:flex;align-items:center;justify-content:space-between;gap:16px}
+.brand{display:flex;align-items:center;gap:10px;font-weight:900;letter-spacing:.5px}
+.brand-mark{width:42px;height:42px;border-radius:14px;background:linear-gradient(145deg,var(--gold),var(--coral));display:grid;place-items:center;color:#092018;font-size:23px;box-shadow:0 6px 24px #f7c94833}
+.brand small{display:block;color:var(--muted);font-size:10px;font-weight:500;letter-spacing:1.5px}
+.navlinks{display:flex;gap:18px;align-items:center;font-size:13px;color:var(--muted)}
+.navlinks a:hover{color:var(--gold)}
+.nav-actions{display:flex;gap:8px}
+.iconbtn{border:1px solid var(--line);background:#ffffff0b;color:var(--text);border-radius:12px;padding:8px 11px}
+.menu-toggle{display:none}
+.hero{max-width:1200px;margin:auto;padding:70px 22px 58px;min-height:610px;display:grid;grid-template-columns:1.02fr .98fr;align-items:center;gap:40px}
+.eyebrow{display:inline-flex;align-items:center;gap:9px;border:1px solid #f7c94855;color:var(--gold);border-radius:100px;padding:6px 13px;font-size:12px;background:#f7c9480c}
+.pulse{width:7px;height:7px;border-radius:50%;background:var(--green);box-shadow:0 0 0 5px #38c98a1b}
+h1{font-size:clamp(42px,6vw,76px);line-height:1.2;margin:22px 0 18px;letter-spacing:-2px}
+h1 span{display:block;color:var(--gold)}
+.hero p{max-width:570px;color:var(--muted);font-size:16px}
+.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+.btn{padding:12px 19px;border-radius:14px;border:1px solid transparent;font-weight:800;font-size:14px;display:inline-flex;align-items:center;gap:9px;transition:.25s}
+.btn:hover{transform:translateY(-3px)}
+.primary{background:var(--gold);color:#10241c;box-shadow:0 10px 35px #f7c94824}
+.secondary{border-color:var(--line);background:#ffffff09;color:var(--text)}
+.hero-visual{position:relative;min-height:460px;display:grid;place-items:center}
+.hero-photo{position:absolute;inset:15px 0 25px 0;border-radius:34px;overflow:hidden;border:1px solid #ffffff30;box-shadow:var(--shadow);transform:rotate(1.3deg)}
+.hero-photo img{width:100%;height:100%;object-fit:cover;filter:saturate(.9)}
+.hero-photo:after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,#061713c9,transparent 65%),linear-gradient(135deg,#f7c94818,#ff725e20)}
+.flag-chip{position:absolute;top:0;right:-4px;background:#102820;border:1px solid #ffffff2b;border-radius:18px;padding:12px 16px;box-shadow:var(--shadow);z-index:2}
+.flag{width:110px;height:70px;position:relative;overflow:hidden;border-radius:7px;box-shadow:0 6px 18px #0005;background:linear-gradient(to bottom,#de3838 0 33%,#fff 33% 66%,#397bd1 66%);margin:auto}
+.flag:before{content:"";position:absolute;left:0;top:0;width:58%;height:100%;background:#187a49;clip-path:polygon(0 0,100% 0,100% 22%,48% 50%,100% 78%,100% 100%,0 100%,0 0)}
+.flag:after{content:"";position:absolute;left:0;top:0;width:49%;height:100%;background:#f7c948;clip-path:polygon(0 0,18% 0,66% 50%,18% 100%,0 100%,45% 50%);filter:drop-shadow(0 0 0 #fff)}
+.flag-black{position:absolute;left:0;top:0;width:38%;height:100%;background:#111;clip-path:polygon(0 0,12% 0,62% 50%,12% 100%,0 100%,44% 50%);z-index:1}
+.float-card{position:absolute;bottom:0;left:-8px;background:#0e2b24ed;border:1px solid var(--line);border-radius:20px;padding:14px 18px;box-shadow:var(--shadow);display:flex;align-items:center;gap:12px;max-width:230px;z-index:2}
+.float-card strong{display:block;font-size:14px}
+.float-card small{color:var(--muted);font-size:11px}
+.sun{font-size:27px}
+.hero-caption{position:absolute;bottom:28px;right:24px;z-index:2}
+.hero-caption b{font-size:22px}
+.hero-caption small{display:block;color:#d7e3d8}
+.stats{max-width:1160px;margin:0 auto 65px;padding:0 22px;display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.stat{border:1px solid var(--line);background:#ffffff07;border-radius:18px;padding:17px 19px}
+.stat strong{display:block;color:var(--gold);font-size:25px}
+.stat span{font-size:12px;color:var(--muted)}
+section.content{max-width:1200px;margin:auto;padding:60px 22px}
+.section-head{display:flex;justify-content:space-between;align-items:end;gap:20px;margin-bottom:27px}
+.kicker{color:var(--coral);font-weight:800;font-size:12px;letter-spacing:1px}
+.section-head h2{font-size:clamp(27px,4vw,42px);line-height:1.35;margin:5px 0}
+.section-head p{margin:0;color:var(--muted);max-width:540px;font-size:14px}
+.grid{display:grid;gap:17px}
+.grid-3{grid-template-columns:repeat(3,1fr)}
+.grid-2{grid-template-columns:repeat(2,1fr)}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:23px;overflow:hidden;transition:transform .25s,border-color .25s;box-shadow:0 10px 40px #0000000b}
+.card:hover{transform:translateY(-5px);border-color:#f7c94866}
+.card-img{height:205px;position:relative;overflow:hidden}
+.card-img img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
+.card:hover .card-img img{transform:scale(1.05)}
+.tag{position:absolute;top:13px;right:13px;border-radius:100px;background:#071b18dc;padding:5px 10px;font-size:11px;border:1px solid #ffffff28}
+.card-body{padding:20px}
+.card h3{margin:0 0 8px;font-size:19px}
+.card p{margin:0;color:var(--muted);font-size:13px}
+.card .more{display:inline-flex;margin-top:15px;color:var(--gold);font-size:12px;font-weight:800}
+.wide-feature{display:grid;grid-template-columns:1fr 1fr;border-radius:28px;overflow:hidden;border:1px solid var(--line);background:linear-gradient(130deg,#153a2d,#0b211b);margin-top:18px}
+.wide-feature img{width:100%;height:100%;min-height:310px;object-fit:cover}
+.wide-text{padding:32px;align-self:center}
+.wide-text h3{font-size:26px;margin:8px 0}
+.wide-text p{color:var(--muted);font-size:14px}
+.pills{display:flex;gap:8px;flex-wrap:wrap;margin-top:18px}
+.pill{font-size:11px;padding:5px 10px;border:1px solid var(--line);border-radius:100px;color:#d9e6da}
+.timeline{position:relative;display:grid;grid-template-columns:repeat(4,1fr);gap:13px}
+.timeline:before{content:"";position:absolute;top:18px;right:6%;left:6%;height:2px;background:linear-gradient(90deg,var(--coral),var(--gold),var(--green));opacity:.7}
+.time-item{position:relative;padding-top:43px}
+.time-item:before{content:"";position:absolute;top:9px;right:18px;width:17px;height:17px;border-radius:50%;background:var(--gold);border:5px solid var(--bg);box-shadow:0 0 0 1px var(--gold)}
+.time-item h3{font-size:16px;margin:0 0 5px}
+.time-item p{font-size:12px;color:var(--muted);margin:0}
+.year{color:var(--gold);font-size:12px;font-weight:900}
+.people{display:grid;grid-template-columns:repeat(4,1fr);gap:13px}
+.person{border:1px solid var(--line);background:#ffffff08;border-radius:20px;padding:22px 16px;text-align:center}
+.person .emoji{font-size:37px;display:block;margin-bottom:8px}
+.person b{display:block}
+.person small{color:var(--muted);font-size:12px}
+.food-card{display:flex;gap:14px;padding:15px;align-items:center}
+.food-card img{width:112px;height:100px;object-fit:cover;border-radius:15px}
+.food-card h3{font-size:16px;margin:0 0 4px}
+.food-card p{font-size:12px;color:var(--muted);margin:0}
+.callout{margin:25px 0 0;padding:26px;border-radius:24px;background:linear-gradient(120deg,#f7c9481a,#38c98a12);border:1px solid #f7c94840;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.callout h3{margin:0 0 5px;font-size:22px}
+.callout p{margin:0;color:var(--muted);font-size:13px}
+.quiz{max-width:850px;margin:auto;border:1px solid var(--line);border-radius:28px;background:linear-gradient(140deg,#12372d,#0b211c);padding:clamp(20px,4vw,38px);box-shadow:var(--shadow)}
+.quiz-top{display:flex;justify-content:space-between;gap:10px;align-items:center}
+.progress{height:6px;background:#ffffff13;border-radius:100px;margin:18px 0 25px;overflow:hidden}
+.progress span{display:block;height:100%;background:linear-gradient(90deg,var(--coral),var(--gold));width:0;transition:width .3s}
+.quiz h3{font-size:22px}
+.answers{display:grid;grid-template-columns:1fr 1fr;gap:11px}
+.answer{background:#ffffff08;border:1px solid var(--line);border-radius:14px;padding:13px 15px;text-align:right;color:var(--text)}
+.answer:hover{border-color:var(--gold)}
+.answer.correct{border-color:var(--green);background:#38c98a20}
+.answer.wrong{border-color:var(--coral);background:#ff725e20}
+.quiz-result{text-align:center;padding:18px}
+.quiz-result strong{font-size:48px;color:var(--gold);display:block}
+.map-panel{border:1px solid var(--line);border-radius:25px;overflow:hidden;display:grid;grid-template-columns:.85fr 1.15fr;background:var(--panel)}
+.map-info{padding:26px}
+.map-info h3{font-size:23px;margin:0 0 8px}
+.map-info p{color:var(--muted);font-size:13px}
+.city-list{display:grid;gap:9px;margin-top:18px}
+.city{border:1px solid var(--line);padding:10px 12px;border-radius:12px;display:flex;justify-content:space-between;gap:10px;font-size:13px}
+.city span{color:var(--gold)}
+.map-image{min-height:360px;background:#163a30;position:relative}
+.map-image img{width:100%;height:100%;min-height:360px;object-fit:cover;filter:brightness(.76) saturate(.8)}
+.map-label{position:absolute;right:20px;bottom:20px;background:#071b18e8;border:1px solid var(--line);padding:12px 16px;border-radius:14px}
+footer{margin-top:55px;border-top:1px solid var(--line);background:#061410;padding:38px 22px}
+.footer-inner{max-width:1150px;margin:auto;display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap}
+.footer-inner p{color:var(--muted);font-size:12px;margin:6px 0}
+.backtop{border:1px solid var(--line);border-radius:13px;padding:9px 14px;font-size:12px}
+.reveal{opacity:0;transform:translateY(18px);transition:opacity .7s,transform .7s}
+.reveal.visible{opacity:1;transform:none}
+.light{--bg:#f3f3e9;--bg2:#e7eee3;--panel:rgba(255,255,255,.83);--text:#172a21;--muted:#52675b;--line:rgba(14,45,30,.15);--shadow:0 22px 70px #172a2118}
+.light body:before{background:radial-gradient(ellipse at 15% 10%,#d5ead7 0,transparent 35%),radial-gradient(ellipse at 90% 45%,#f8e7bb 0,transparent 28%),linear-gradient(150deg,#f3f3e9,#e8f0e7)}
+.light header{background:#f5f7eee8}
+.light .flag-chip,.light .float-card{background:#fff}
+.light footer{background:#e5ece2}
+.light .quiz{background:linear-gradient(140deg,#e3f0e5,#f7f0d9)}
+.light .map-image img{filter:brightness(.92) saturate(.8)}
+@media(max-width:900px){
+.navlinks{display:none;position:absolute;top:67px;right:12px;left:12px;background:var(--bg2);border:1px solid var(--line);border-radius:18px;padding:17px;flex-direction:column;align-items:stretch}
+.navlinks.open{display:flex}
+.menu-toggle{display:inline-flex}
+.hero{grid-template-columns:1fr;padding-top:45px}
+.hero-visual{min-height:400px}
+.stats{grid-template-columns:repeat(2,1fr)}
+.grid-3{grid-template-columns:repeat(2,1fr)}
+.people{grid-template-columns:repeat(2,1fr)}
+.timeline{grid-template-columns:repeat(2,1fr)}
+.timeline:before{display:none}
+.map-panel{grid-template-columns:1fr}
+.map-image{min-height:260px}
+.map-image img{min-height:260px}
+}
+@media(max-width:560px){
+.brand small{display:none}
+.nav{padding:10px 14px}
+.hero{padding:35px 17px 45px;gap:20px}
+.hero-visual{min-height:330px}
+.hero-photo{inset:10px 0 18px}
+.flag-chip{right:0;padding:9px}
+.flag{width:82px;height:52px}
+.float-card{left:0;padding:10px 12px}
+.hero-caption{right:15px;bottom:22px}
+.hero-caption b{font-size:18px}
+.stats{padding:0 15px}
+section.content{padding:43px 16px}
+.grid-3,.grid-2{grid-template-columns:1fr}
+.card-img{height:220px}
+.section-head{align-items:start;flex-direction:column}
+.wide-feature{grid-template-columns:1fr}
+.wide-feature img{min-height:220px;max-height:260px}
+.wide-text{padding:23px}
+.timeline{grid-template-columns:1fr 1fr}
+.people{grid-template-columns:1fr 1fr}
+.answers{grid-template-columns:1fr}
+.callout{align-items:start;flex-direction:column}
+.food-card img{width:90px;height:90px}
+}
+</style>
+</head>
+<body>
+<div class="topline"></div>
 
+<header>
+<nav class="nav">
+<a class="brand" href="#home">
+<span class="brand-mark">✦</span>
+<span>MZANSI<small>THE RAINBOW NATION</small></span>
+</a>
+<div class="navlinks" id="navlinks">
+<a href="#about">معرفی</a>
+<a href="#places">دیدنی‌ها</a>
+<a href="#nature">طبیعت</a>
+<a href="#culture">فرهنگ</a>
+<a href="#history">تاریخ</a>
+<a href="#food">غذاها</a>
+<a href="#quiz">مسابقه</a>
+</div>
+<div class="nav-actions">
+<button class="iconbtn" id="themeToggle" aria-label="تغییر تم">☀️</button>
+<button class="iconbtn menu-toggle" id="menuToggle" aria-label="باز کردن منو">☰</button>
+</div>
+</nav>
+</header>
+
+<main>
+<section class="hero" id="home">
+<div class="hero-copy">
+<div class="eyebrow"><span class="pulse"></span> مقصد امروز ما · آفریقای جنوبی</div>
+<h1>یک کشور،<span>هزار رنگ.</span></h1>
+<p>به MZANSI خوش آمدید؛ سفری دیجیتال به سرزمین رنگین‌کمان، جایی که اقیانوس‌ها به هم می‌رسند، حیات‌وحش شگفت‌انگیز است و فرهنگ‌های گوناگون در کنار هم زندگی می‌کنند.</p>
+<div class="actions">
+<a class="btn primary" href="#about">شروع ماجراجویی <span>←</span></a>
+<a class="btn secondary" href="#places">کشف جاذبه‌ها ✦</a>
+</div>
+<div class="pills">
+<span class="pill">🌍 قارهٔ آفریقا</span>
+<span class="pill">🌈 ملت رنگین‌کمان</span>
+<span class="pill">🇿🇦 جمهوری آفریقای جنوبی</span>
+</div>
+</div>
+
+<div class="hero-visual">
+<div class="hero-photo">
+<img src="https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?auto=format&fit=crop&w=1200&q=85" alt="چشم‌انداز طبیعت آفریقا">
+</div>
+<div class="flag-chip">
+<div class="flag"><span class="flag-black"></span></div>
+<small style="display:block;text-align:center;margin-top:7px;color:var(--muted)">پرچم آفریقای جنوبی</small>
+</div>
+<div class="hero-caption">
+<b>South Africa</b>
+<small>زیبایی در تنوع معنا می‌شود.</small>
+</div>
+<div class="float-card">
+<span class="sun">☀️</span>
+<div><strong>آغاز یک سفر متفاوت</strong><small>از شهرهای مدرن تا طبیعت بکر</small></div>
+</div>
+</div>
+</section>
+
+<div class="stats">
+<div class="stat"><strong>۱۱</strong><span>زبان رسمی</span></div>
+<div class="stat"><strong>۳</strong><span>پایتخت با نقش‌های متفاوت</span></div>
+<div class="stat"><strong>۲</strong><span>اقیانوس در سواحل کشور</span></div>
+<div class="stat"><strong>۱۹۹۴</strong><span>آغاز دموکراسی چندنژادی</span></div>
+</div>
+
+<section class="content" id="about">
+<div class="section-head">
+<div><div class="kicker">01 / آشنایی با کشور</div><h2>آفریقای جنوبی در یک نگاه</h2></div>
+<p>کشوری در جنوبی‌ترین بخش قارهٔ آفریقا با تاریخ، طبیعت، فرهنگ و اقتصاد متنوع.</p>
+</div>
+<div class="grid grid-3">
+<article class="card"><div class="card-body"><span class="emoji">📍</span><h3>موقعیت جغرافیایی</h3><p>در جنوب قارهٔ آفریقا قرار دارد و با نامیبیا، بوتسوانا، زیمبابوه، موزامبیک و اسواتینی هم‌مرز است. کشور لسوتو نیز کاملاً درون مرزهای آن قرار گرفته است.</p></div></article>
+<article class="card"><div class="card-body"><span class="emoji">🏛️</span><h3>پایتخت‌ها</h3><p>پرتوریا مرکز اجرایی، کیپ‌تاون مرکز قانون‌گذاری و بلومفونتین به‌طور سنتی مرکز قضایی شناخته می‌شود؛ دادگاه قانون اساسی در ژوهانسبورگ قرار دارد.</p></div></article>
+<article class="card"><div class="card-body"><span class="emoji">💰</span><h3>اطلاعات عمومی</h3><p>واحد پول این کشور رَند آفریقای جنوبی (ZAR) است. این کشور از جمهوری و نظام پارلمانی برخوردار است و یکی از اقتصادهای مهم قارهٔ آفریقا به شمار می‌رود.</p></div></article>
+</div>
+<div class="wide-feature">
+<img src="https://images.unsplash.com/photo-1489749798305-4fea3ae63d43?auto=format&fit=crop&w=1000&q=85" alt="چشم‌انداز شهر در آفریقای جنوبی">
+<div class="wide-text"><div class="kicker">THE RAINBOW NATION</div><h3>چرا «ملت رنگین‌کمان»؟</h3><p>این لقب به تنوع فرهنگی، زبانی و قومی مردم آفریقای جنوبی اشاره دارد. پس از پایان نظام آپارتاید، این تعبیر نمادی از امید به همزیستی، برابری و ساختن آینده‌ای مشترک شد.</p><div class="pills"><span class="pill">تنوع فرهنگی</span><span class="pill">۱۱ زبان رسمی</span><span class="pill">همزیستی</span></div></div>
+</div>
+</section>
+
+<section class="content" id="places">
+<div class="section-head"><div><div class="kicker">02 / شهرها و جاذبه‌ها</div><h2>دروازه‌هایی به دنیای متفاوت</h2></div><p>از شهرهای ساحلی و مدرن تا کوهستان‌ها و بناهای تاریخی؛ هر مقصد داستان خودش را دارد.</p></div>
+<div class="grid grid-3">
+<article class="card"><div class="card-img"><img src="https://images.unsplash.com/photo-1580060839134-75a5edca2e99?auto=format&fit=crop&w=900&q=80" alt="کوه تیبل در کیپ‌تاون"><span class="tag">شهر ساحلی</span></div><div class="card-body"><h3>کیپ‌تاون</h3><p>شهری تماشایی در کنار اقیانوس اطلس با کوه تیبل، سواحل زیبا، اسکلهٔ ویکتوریا و آلفرد و تاریخ فرهنگی غنی.</p><a class="more" href="https://www.capetown.travel/" target="_blank" rel="noopener">راهنمای گردشگری ←</a></div></article>
+<article class="card"><div class="card-img"><img src="https://images.unsplash.com/photo-1576485290814-1c72aa4bbb8e?auto=format&fit=crop&w=900&q=80" alt="حیات‌وحش آفریقا"><span class="tag">طبیعت وحشی</span></div><div class="card-body"><h3>پارک ملی کروگر</h3><p>یکی از معروف‌ترین مناطق حفاظت‌شدهٔ آفریقا؛ زیستگاه فیل، شیر، پلنگ، کرگدن و بوفالو، در کنار گونه‌های فراوان دیگر.</p><a class="more" href="https://www.sanparks.org/" target="_blank" rel="noopener">پارک‌های ملی ←</a></div></article>
+<article class="card"><div class="card-img"><img src="https://images.unsplash.com/photo-1569096651661-820d0de8b4ab?auto=format&fit=crop&w=900&q=80" alt="چشم‌انداز شهری"><span class="tag">مرکز اقتصادی</span></div><div class="card-body"><h3>ژوهانسبورگ</h3><p>بزرگ‌ترین شهر کشور از نظر جمعیت شهری و مرکز مهم اقتصادی؛ با موزه‌ها، هنر شهری و مکان‌های مرتبط با تاریخ آپارتاید.</p><a class="more" href="https://www.southafrica.net/" target="_blank" rel="noopener">گردشگری رسمی ←</a></div></article>
+<article class="card"><div class="card-img"><img src="https://images.unsplash.com/photo-1511497584788-876760111969?auto=format&fit=crop&w=900&q=80" alt="جنگل سرسبز"><span class="tag">طبیعت</span></div><div class="card-body"><h3>گاردن روت</h3><p>مسیر ساحلی معروفی با جنگل‌ها، سواحل، تالاب‌ها و شهرهای کوچک دیدنی که برای سفر جاده‌ای محبوب است.</p></div></article>
+<article class="card"><div class="card-img"><img src="https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=900&q=80" alt="کوهستان"><span class="tag">کوهستان</span></div><div class="card-body"><h3>کوه‌های دراکنزبرگ</h3><p>رشته‌کوهی چشمگیر با مسیرهای پیاده‌روی، آبشارها و چشم‌اندازهای طبیعی؛ نام آن به معنی «کوه اژدها» است.</p></div></article>
+<article class="card"><div class="card-img"><img src="https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?auto=format&fit=crop&w=900&q=80" alt="طبیعت آفریقا"><span class="tag">میراث جهانی</span></div><div class="card-body"><h3>گهوارهٔ نوع بشر</h3><p>منطقه‌ای نزدیک ژوهانسبورگ که فسیل‌های مهمی از انسان‌تباران در آن پیدا شده و برای شناخت تکامل انسان اهمیت جهانی دارد.</p></div></article>
+</div>
+</section>
+
+<section class="content" id="nature">
+<div class="section-head"><div><div class="kicker">03 / طبیعت و حیات‌وحش</div><h2>قلمرو شگفتی‌های طبیعی</h2></div><p>تنوع زیستی آفریقای جنوبی از ساواناها تا سواحل و مناطق کوهستانی گسترده است.</p></div>
+<div class="grid grid-2">
+<article class="card"><div class="card-img"><img src="https://images.unsplash.com/photo-1549366021-9f761d450615?auto=format&fit=crop&w=1000&q=85" alt="فیل آفریقایی"><span class="tag">حیات‌وحش</span></div><div class="card-body"><h3>پنج حیوان بزرگ آفریقا</h3><p>شیر، پلنگ، فیل، کرگدن و بوفالو به‌طور سنتی «پنج حیوان بزرگ» نامیده می‌شوند. این اصطلاح تاریخی با شکار پیوند داشته، اما امروز اغلب در گردشگری حیات‌وحش استفاده می‌شود.</p></div></article>
+<article class="card"><div class="card-img"><img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1000&q=85" alt="چشم‌انداز طبیعی"><span class="tag">محیط زیست</span></div><div class="card-body"><h3>حفاظت از طبیعت</h3><p>پارک‌های ملی و مناطق حفاظت‌شده در نگهداری زیستگاه‌ها نقش دارند. شکار غیرقانونی، کمبود آب و تغییرات اقلیمی از چالش‌های مهم حفاظت از گونه‌ها هستند.</p></div></article>
+</div>
+</section>
+
+<section class="content" id="culture">
+<div class="section-head"><div><div class="kicker">04 / فرهنگ و زندگی</div><h2>جایی که فرهنگ‌ها به هم می‌رسند</h2></div><p>زبان‌ها، موسیقی، هنر، ورزش و سنت‌های متنوع، هویت چندلایهٔ این کشور را می‌سازند.</p></div>
+<div class="grid grid-3">
+<article class="card"><div class="card-body"><span class="emoji">🗣️</span><h3>۱۱ زبان رسمی</h3><p>از جمله زولو، خوسا، آفریکانس، انگلیسی، سوتوی شمالی و جنوبی، تسوانا، سوازی، وندا، تسونگا و ندبله. زبان اشارهٔ آفریقای جنوبی نیز زبان رسمی است.</p></div></article>
+<article class="card"><div class="card-body"><span class="emoji">🥁</span><h3>موسیقی و رقص</h3><p>سبک‌هایی مانند موسیقی زولو، موسیقی گاسپل، جَز و آمپیانو در این کشور محبوب‌اند. رقص‌های سنتی نیز در مراسم اجتماعی و فرهنگی جایگاه مهمی دارند.</p></div></article>
+<article class="card"><div class="card-body"><span class="emoji">🏉</span><h3>ورزش</h3><p>راگبی، فوتبال و کریکت از ورزش‌های پرطرفدارند. تیم ملی راگبی «اسپرینگباکس» و تیم فوتبال «بافانا بافانا» نامیده می‌شوند.</p></div></article>
+</div>
+</section>
+
+<section class="content" id="history">
+<div class="section-head"><div><div class="kicker">05 / سفر در زمان</div><h2>تاریخی پرفرازونشیب</h2></div><p>گذشتهٔ این سرزمین شامل تمدن‌های بومی، استعمار، مبارزه با تبعیض و گذار به دموکراسی است.</p></div>
+<div class="timeline">
+<div class="time-item"><span class="year">هزاران سال پیش</span><h3>جوامع بومی</h3><p>گروه‌های گوناگونی از جمله سان و خوی در این منطقه زندگی می‌کردند و میراث فرهنگی دیرینه‌ای بر جای گذاشتند.</p></div>
+<div class="time-item"><span class="year">۱۶۵۲ میلادی</span><h3>آغاز استقرار اروپاییان</h3><p>شرکت هند شرقی هلند ایستگاهی در کیپ ایجاد کرد؛ روندی که در تاریخ استعمار منطقه نقش مهمی داشت.</p></div>
+<div class="time-item"><span class="year">۱۹۴۸ تا ۱۹۹۴</span><h3>آپارتاید</h3><p>نظامی رسمی از جداسازی و تبعیض نژادی برقرار شد. مردم و جنبش‌های بسیاری برای برابری مبارزه کردند.</p></div>
+<div class="time-item"><span class="year">۱۹۹۴</span><h3>انتخابات دموکراتیک</h3><p>نلسون ماندلا پس از نخستین انتخابات ملی با مشارکت همهٔ نژادها رئیس‌جمهور شد؛ نقطهٔ عطفی در تاریخ کشور.</p></div>
+</div>
+<div class="wide-feature">
+<img src="https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?auto=format&fit=crop&w=1000&q=80" alt="چشم‌انداز آفریقا">
+<div class="wide-text"><div class="kicker">A SYMBOL OF FREEDOM</div><h3>نلسون ماندلا؛ نماد مقاومت و آشتی</h3><p>نلسون ماندلا یکی از چهره‌های اصلی مبارزه با آپارتاید بود. او پس از سال‌ها زندان، در روند گذار کشور به دموکراسی نقش مهمی ایفا کرد و در سال ۱۹۹۳ جایزهٔ صلح نوبل را دریافت کرد.</p><div class="pills"><span class="pill">برابری</span><span class="pill">آزادی</span><span class="pill">آشتی ملی</span></div></div>
+</div>
+</section>
+
+<section class="content" id="food">
+<div class="section-head"><div><div class="kicker">06 / مزه‌های محلی</div><h2>طعم آفریقای جنوبی</h2></div><p>آشپزی این کشور از سنت‌های آفریقایی، مالایی، هلندی، هندی و دیگر فرهنگ‌ها تأثیر گرفته است.</p></div>
+<div class="grid grid-2">
+<article class="card food-card"><img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=400&q=80" alt="غذای کبابی"><div><h3>برای (Braai)</h3><p>باربیکیوی سنتی و یک دورهمی اجتماعی محبوب که در آن گوشت و مواد غذایی روی آتش کباب می‌شوند.</p></div></article>
+<article class="card food-card"><img src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=400&q=80" alt="خوراک"><div><h3>بابوتی (Bobotie)</h3><p>غذایی معروف با گوشت چرخ‌کردهٔ مزه‌دار و لایه‌ای از تخم‌مرغ؛ معمولاً با برنج سرو می‌شود.</p></div></article>
+<article class="card food-card"><img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=400&q=80" alt="گوشت کبابی"><div><h3>بِلْتونگ (Biltong)</h3><p>گوشت خشک‌شده و ادویه‌دار که به‌عنوان خوراکی میان‌وعده محبوب است.</p></div></article>
+<article class="card food-card"><img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=400&q=80" alt="غذا"><div><h3>بانی چاو (Bunny Chow)</h3><p>غذایی با ریشه در جامعهٔ هندی‌تبار دوربان که معمولاً از نان توخالی پُر از کاری تشکیل می‌شود.</p></div></article>
+</div>
+</section>
+
+<section class="content" id="facts">
+<div class="section-head"><div><div class="kicker">07 / دانستنی‌ها</div><h2>چیزهایی که شاید نمی‌دانستید</h2></div><p>چند نکتهٔ جالب دربارهٔ این کشور رنگارنگ.</p></div>
+<div class="grid grid-3">
+<article class="card"><div class="card-body"><span class="emoji">🌊</span><h3>دو اقیانوس</h3><p>سواحل آفریقای جنوبی به اقیانوس اطلس و اقیانوس هند می‌رسند؛ همین موضوع بر آب‌وهوا و طبیعت مناطق ساحلی اثر می‌گذارد.</p></div></article>
+<article class="card"><div class="card-body"><span class="emoji">🦴</span><h3>میراث باستان‌شناسی</h3><p>غارها و محوطه‌های باستانی این کشور شواهد ارزشمندی از تاریخ انسان و هنر سنگی را در خود جای داده‌اند.</p></div></article>
+<article class="card"><div class="card-body"><span class="emoji">🌼</span><h3>گل ملی</h3><p>پروتئای شاهی (King Protea) گل ملی آفریقای جنوبی است؛ گلی شاخص با ظاهری چشمگیر.</p></div></article>
+</div>
+<div class="callout">
+<div><h3>یک واقعیت تصادفی کشف کن!</h3><p id="randomFact">برای دیدن یک دانستنی تازه، دکمه را بزن.</p></div>
+<button class="btn primary" id="factButton">دانستنی تازه ✦</button>
+</div>
+</section>
+
+<section class="content" id="map">
+<div class="section-head"><div><div class="kicker">08 / راهنمای سفر</div><h2>مقصد بعدی کجاست؟</h2></div><p>شهرهای مهم را بشناس و برای بازدید از جاذبه‌ها برنامه‌ریزی کن.</p></div>
+<div class="map-panel">
+<div class="map-info"><h3>شهرهای مهم</h3><p>برای دیدن موقعیت شهرها روی نقشهٔ آنلاین، از پیوند زیر استفاده کن.</p>
+<div class="city-list">
+<div class="city"><b>کیپ‌تاون</b><span>ساحل و کوهستان</span></div>
+<div class="city"><b>پرتوریا</b><span>مرکز اجرایی</span></div>
+<div class="city"><b>ژوهانسبورگ</b><span>اقتصاد و هنر</span></div>
+<div class="city"><b>دوربان</b><span>ساحل و فرهنگ هندی</span></div>
+</div>
+<a class="btn primary" style="margin-top:18px" href="https://www.google.com/maps/search/South+Africa/" target="_blank" rel="noopener">باز کردن نقشهٔ آنلاین ↗</a>
+</div>
+<div class="map-image">
+<img src="https://images.unsplash.com/photo-1489749798305-4fea3ae63d43?auto=format&fit=crop&w=1000&q=80" alt="نمایی از آفریقای جنوبی">
+<div class="map-label"><b>🇿🇦 آفریقای جنوبی</b><br><small>از شهر تا طبیعت وحشی</small></div>
+</div>
+</div>
+</section>
+
+<section class="content" id="quiz">
+<div class="section-head"><div><div class="kicker">09 / مسابقهٔ MZANSI</div><h2>چقدر آفریقای جنوبی را می‌شناسی؟</h2></div><p>به ۷ پرسش چهارگزینه‌ای پاسخ بده و امتیازت را در پایان ببین.</p></div>
+<div class="quiz">
+<div class="quiz-top"><b id="quizCount">پرسش ۱ از ۷</b><span class="pill" id="quizScore">امتیاز: ۰</span></div>
+<div class="progress"><span id="quizProgress"></span></div>
+<div id="quizArea"></div>
+</div>
+</section>
+
+<section class="content" id="visit">
+<div class="callout">
+<div><h3>آماده‌ای بیشتر کشف کنی؟</h3><p>آفریقای جنوبی، سرزمین تنوع فرهنگی، طبیعت شگفت‌انگیز و داستان‌های تاریخی.</p></div>
+<a class="btn primary" href="https://www.southafrica.net/" target="_blank" rel="noopener">وب‌سایت رسمی گردشگری ↗</a>
+</div>
+</section>
+</main>
+
+<footer>
+<div class="footer-inner">
+<div><div class="brand"><span class="brand-mark">✦</span><span>MZANSI<small>THE RAINBOW NATION</small></span></div><p>یک سفر دیجیتال آموزشی به آفریقای جنوبی</p><p>طراحی‌شده برای جشنوارهٔ ملل مدرسه</p></div>
+<div><p>آفریقای جنوبی؛ سرزمین رنگین‌کمان 🌈</p><p>با دانش، جهان را بهتر بشناسیم.</p></div>
+<button class="backtop" id="backtop">↑ بازگشت به بالا</button>
+</div>
+</footer>
+
+<script>
+const themeToggle=document.getElementById('themeToggle');
+themeToggle.addEventListener('click',()=>{
+document.documentElement.classList.toggle('light');
+themeToggle.textContent=document.documentElement.classList.contains('light')?'🌙':'☀️';
+});
+document.getElementById('menuToggle').addEventListener('click',()=>{
+document.getElementById('navlinks').classList.toggle('open');
+});
+document.querySelectorAll('.navlinks a').forEach(a=>a.addEventListener('click',()=>{
+document.getElementById('navlinks').classList.remove('open');
+}));
+document.getElementById('backtop').addEventListener('click',()=>window.scrollTo({top:0,behavior:'smooth'}));
+
+const revealObserver=new IntersectionObserver(entries=>{
+entries.forEach(entry=>{
+if(entry.isIntersecting){entry.target.classList.add('visible');revealObserver.unobserve(entry.target);}
+});
+},{threshold:.08});
+document.querySelectorAll('.card,.section-head,.wide-feature,.timeline,.callout,.map-panel').forEach(el=>{
+el.classList.add('reveal');revealObserver.observe(el);
+});
+
+const questions=[
+{q:'آفریقای جنوبی در کدام قاره قرار دارد؟',a:['آسیا','آفریقا','اروپا','آمریکای جنوبی'],c:1},
+{q:'واحد پول آفریقای جنوبی چیست؟',a:['رَند','دلار','یورو','پوند'],c:0},
+{q:'چند زبان رسمی در آفریقای جنوبی وجود دارد؟',a:['۳ زبان','۵ زبان','۱۱ زبان','۲۰ زبان'],c:2},
+{q:'نلسون ماندلا در چه سالی رئیس‌جمهور شد؟',a:['۱۹۶۴','۱۹۸۰','۱۹۹۴','۲۰۰۱'],c:2},
+{q:'کدام شهر مرکز قانون‌گذاری آفریقای جنوبی است؟',a:['کیپ‌تاون','ژوهانسبورگ','دوربان','پرتوریا'],c:0},
+{q:'لقب مشهور آفریقای جنوبی چیست؟',a:['سرزمین یخ','ملت رنگین‌کمان','سرزمین هزار دریاچه','جزیرهٔ سبز'],c:1},
+{q:'کدام دو اقیانوس به سواحل آفریقای جنوبی می‌رسند؟',a:['آرام و منجمد شمالی','اطلس و هند','هند و آرام','اطلس و منجمد جنوبی'],c:1}
+];
+let currentQuestion=0,score=0,answered=false;
+function renderQuestion(){
+const area=document.getElementById('quizArea');
+document.getElementById('quizCount').textContent=`پرسش ${Math.min(currentQuestion+1,questions.length)} از ${questions.length}`;
+document.getElementById('quizScore').textContent=`امتیاز: ${score}`;
+document.getElementById('quizProgress').style.width=(currentQuestion/questions.length*100)+'%';
+if(currentQuestion>=questions.length){
+area.innerHTML=`<div class="quiz-result"><span style="font-size:42px">🏆</span><strong>${score} از ${questions.length}</strong><h3>آفرین! مسابقه تمام شد.</h3><p>حالا چیزهای بیشتری دربارهٔ آفریقای جنوبی می‌دانی.</p><button class="btn primary" id="restartQuiz">شروع دوباره ↻</button></div>`;
+document.getElementById('quizProgress').style.width='100%';
+document.getElementById('restartQuiz').addEventListener('click',()=>{currentQuestion=0;score=0;answered=false;renderQuestion();});
+return;
+}
+answered=false;
+const item=questions[currentQuestion];
+area.innerHTML=`<h3>${item.q}</h3><div class="answers">${item.a.map((answer,index)=>`<button class="answer" data-index="${index}">${String.fromCharCode(1575+index)}. ${answer}</button>`).join('')}</div><p id="answerFeedback" style="min-height:28px;color:var(--muted);font-size:13px"></p><button class="btn primary" id="nextQuestion" disabled>پرسش بعدی ←</button>`;
+area.querySelectorAll('.answer').forEach(button=>button.addEventListener('click',()=>{
+if(answered)return;
+answered=true;
+const chosen=Number(button.dataset.index);
+if(chosen===item.c){score++;button.classList.add('correct');document.getElementById('answerFeedback').textContent='درست است! آفرین 👏';}
+else{button.classList.add('wrong');area.querySelectorAll('.answer')[item.c].classList.add('correct');document.getElementById('answerFeedback').textContent='پاسخ درست: '+item.a[item.c];}
+document.getElementById('quizScore').textContent=`امتیاز: ${score}`;
+document.getElementById('nextQuestion').disabled=false;
+document.getElementById('nextQuestion').textContent=currentQuestion===questions.length-1?'دیدن نتیجه 🏆':'پرسش بعدی ←';
+}));
+document.getElementById('nextQuestion').addEventListener('click',()=>{
+if(!answered)return;
+currentQuestion++;renderQuestion();
+});
+}
+renderQuestion();
+
+const facts=[
+'آفریقای جنوبی ۱۱ زبان رسمی دارد.',
+'پرتوریا، کیپ‌تاون و بلومفونتین نقش‌های پایتختی متفاوت دارند.',
+'لسوتو کشوری مستقل است که کاملاً درون مرزهای آفریقای جنوبی قرار گرفته است.',
+'«برای» نام رایج دورهمی باربیکیو در آفریقای جنوبی است.',
+'نلسون ماندلا در سال ۱۹۹۴ رئیس‌جمهور شد.',
+'آفریقای جنوبی هم به اقیانوس اطلس و هم به اقیانوس هند راه دارد.'
+];
+document.getElementById('factButton').addEventListener('click',()=>{
+document.getElementById('randomFact').textContent='✦ '+facts[Math.floor(Math.random()*facts.length)];
+});
+</script>
+</body>
+</html>
